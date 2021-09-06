@@ -1,5 +1,10 @@
 {.used.}
-type OptickCategory* = cstring
+
+# This really needs to be redone, probably through the use of macros
+# instead of templates, using `instantiationInfo()` for accurate func names.
+# And it's not great that this file is being included instead of imported...
+
+type OptickCategory = cstring
 # type OptickCategory* {.pure.} = enum
 #     None
 #     AI
